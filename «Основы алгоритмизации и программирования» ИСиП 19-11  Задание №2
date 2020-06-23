@@ -1,0 +1,33 @@
+using System;
+
+namespace money
+{
+    class Money
+    {
+        public string currencyName;
+        public string wholePart;
+        public string fractionalPart;
+
+        public void ShowCurrency()
+        {
+            Console.WriteLine(
+                "Рублей: " + 15 +
+                " / Копеек: " + 37 +
+                "\n"
+                );
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Money currency = new Money();
+
+            currency.currencyName = "Рубль / копейки";
+            currency.wholePart = "Рубль";
+            currency.fractionalPart = "Копейки";
+            currency.ShowCurrency();
+        }
+    }
+}
